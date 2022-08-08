@@ -1,0 +1,266 @@
+Index: src/test/java/Arrays/FirstArraysTaskTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Arrays/FirstArraysTaskTest.java b/src/test/java/Arrays/FirstArraysTaskTest.java
+new file mode 100644
+--- /dev/null	(date 1659947893332)
++++ b/src/test/java/Arrays/FirstArraysTaskTest.java	(date 1659947893332)
+@@ -0,0 +1,20 @@
++package Arrays;
++         import org.junit.Assert;
++         import org.junit.Test;
++
++
++
++public class FirstArraysTaskTest {
++    @Test
++    public void testFirst() {
++        int[] numbers = new int[5];
++        numbers[0] = 9;
++        numbers[1] = 8;
++        numbers[2] = 7;
++        numbers[3] = 6;
++        numbers[4] = 5;
++        int expectedResult = 2;
++        int result = FirstArraysTask.getSuccessFulNumbersCount(numbers);
++        Assert.assertEquals(expectedResult,result);
++    }
++    }
+\ No newline at end of file
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1659779941745)
++++ b/.idea/encodings.xml	(date 1659779941745)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+new file mode 100644
+--- /dev/null	(date 1659781366940)
++++ b/pom.xml	(date 1659781366940)
+@@ -0,0 +1,24 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>avaCore</artifactId>
++    <version>1.0-SNAPSHOT</version>
++
++    <properties>
++        <maven.compiler.source>18</maven.compiler.source>
++        <maven.compiler.target>18</maven.compiler.target>
++        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++    </properties>
++<dependencies><!-- https://mvnrepository.com/artifact/junit/junit -->
++    <dependency>
++        <groupId>junit</groupId>
++        <artifactId>junit</artifactId>
++        <version>4.13.2</version>
++        <scope>test</scope>
++    </dependency>
++</dependencies>
++</project>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+new file mode 100644
+--- /dev/null	(date 1659779941763)
++++ b/.idea/jarRepositories.xml	(date 1659779941763)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1659779922665)
++++ b/.idea/.gitignore	(date 1659779922665)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1659947011163)
++++ b/.idea/compiler.xml	(date 1659947011163)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="avaCore" />
++      </profile>
++    </annotationProcessing>
++  </component>
++</project>
+\ No newline at end of file
+Index: ignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ignore b/ignore
+new file mode 100644
+--- /dev/null	(date 1659949456622)
++++ b/ignore	(date 1659949456622)
+@@ -0,0 +1,2 @@
++.idea
+++iml
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1659779941689)
++++ b/.idea/misc.xml	(date 1659779941689)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1659846215526)
++++ b/.idea/vcs.xml	(date 1659846215526)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/java/Arrays/FirstArraysTask.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Arrays/FirstArraysTask.java b/src/main/java/Arrays/FirstArraysTask.java
+new file mode 100644
+--- /dev/null	(date 1659804086907)
++++ b/src/main/java/Arrays/FirstArraysTask.java	(date 1659804086907)
+@@ -0,0 +1,25 @@
++package Arrays;
++
++public class FirstArraysTask {
++
++
++    public static boolean isSuccess(int number) {
++        return number % 2 == 0;
++    }
++
++    public static int getSuccessFulNumbersCount(int[] values) {
++        int[] numbers = new int[5];
++        numbers[0] = 9;
++        numbers[1] = 8;
++        numbers[2] = 7;
++        numbers[3] = 6;
++        numbers[4] = 5;
++        int completeResult = 0;
++        for (int value : values) {
++            if (FirstArraysTask.isSuccess(value)) {
++                completeResult++;
++            }
++        }
++        return completeResult;
++    }
++    }
+\ No newline at end of file
+Index: .idea/fileColors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/fileColors.xml b/.idea/fileColors.xml
+new file mode 100644
+--- /dev/null	(date 1659779905877)
++++ b/.idea/fileColors.xml	(date 1659779905877)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="SharedFileColors">
++    <fileColor scope="Non-Project Files" color="Yellow" />
++    <fileColor scope="Tests" color="Green" />
++  </component>
++</project>
+\ No newline at end of file
